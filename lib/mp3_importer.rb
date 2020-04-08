@@ -9,6 +9,7 @@ class MP3Importer
  @files.collect {
    |x| 
   @collect << x.split("./spec/fixtures/mp3s/")[1]}
+  @collect
   
   end
   def import
