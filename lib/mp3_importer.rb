@@ -5,7 +5,7 @@ class MP3Importer
   end
   def files
   @files = Dir["./spec/fixtures/**/*.mp3"]
-  @files.collect {|x| x.}
+  @files.collect {|x| x.split()}
   
   end
   def import
