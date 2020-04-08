@@ -5,7 +5,7 @@ class MP3Importer
     @path = path
   end
   def files
-  @files = Dir["./spec/fixtures/**/*.mp3"]
+  @files = Dir["#{@path}**/*.mp3"]
  @collect = []
  @files.each {
    |x| 
