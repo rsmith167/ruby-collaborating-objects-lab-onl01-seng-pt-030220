@@ -1,3 +1,4 @@
+require 'pry'
 class MP3Importer
   attr_accessor :path, :files, :collect
   def initialize(path)
@@ -18,5 +19,5 @@ class MP3Importer
     
     
   end
-  
+  pry.binding
 end
