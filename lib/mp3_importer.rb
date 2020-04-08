@@ -6,9 +6,9 @@ class MP3Importer
   def files
   @files = Dir["./spec/fixtures/**/*.mp3"]
  @collect = []
- @collect = @files.collect {
+ @files.collect {
    |x| 
-  x.split("./spec/fixtures/mp3s/")[1]}
+  @collect << x.split("./spec/fixtures/mp3s/")[1]}
   
   end
   def import
