@@ -3,8 +3,6 @@ class MP3Importer
   attr_accessor :path, :files, :collect
   def initialize(path)
     @path = path
-    @path.files
-    @path.import
   end
   def files
   @files = Dir["#{@path}**/*.mp3"]
