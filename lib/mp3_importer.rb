@@ -5,7 +5,7 @@ class MP3Importer
   end
   def files
     basedir = @path
-  @files = 
+  @files = Dir["./spec/fixtures/**/*.mp3"]
   end
   def import
     Song.new_by_file_name(@files)
